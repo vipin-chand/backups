@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %} {% csrf_token %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirana</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="{% static 'home/style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="" alt="kirana logo" width="50px" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 align-items-center justify-content-end">
+          <li class="nav-item mx-4 font-weight-bold">
+            <a class="nav-link menu-links" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item mx-4 font-weight-bold">
+            <a class="nav-link menu-links" href="#services">Services</a>
+          </li>
+          <li class="nav-item mx-4 font-weight-bold">
+            <a class="nav-link menu-links" href="#aboutus">About Us</a>
+          </li>
+          <li class="nav-item mx-4 font-weight-bold">
+            <a class="nav-link menu-links" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="btn login-btn mx-2 my-1"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              href="#"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-register my-1" href="/register">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="full-height">
+      <div class="row m-0 p-0 hero-cont">
+        <div class="col-md-5 col-sm-12">
+          <article>
+            <h3 class="hero">Put your store to customer door</h3>
+            <p>
+              Find out what a difference this way of delivery make in your life
+            </p>
+          </article>
+          <div class="download-links">
+            <a
+              target="_"
+              href="https://play.google.com/store/apps/details?id=com.kirana.kiranaapp"
+            >
+              <img
+                src="img/google-play-badge.png"
+                width="350px"
+                height="144px"
+                alt=""
+              />
+            </a>
+
+            <a href="#">
+              <img
+                src="img/coming_soon_apple.png"
+                width="330px"
+                height="100px"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-7 d-none d-md-block">
+          <img src="img/delivery.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="full-height our-services" id="services">
+      <h3 class="section-title my-5">Our Services</h3>
+
+      <article class="row m-0 p-0 w-75 mx-auto text-center">
+        <section class="col-sm-4 d-flex">
+          <figure class="figure shopping-app">
+            <img
+              src="img/shopping_app.jpg"
+              class="figure-img img-fluid rounded-circle services-img"
+              alt="Card image cap"
+            />
+            <h3>Shopping App</h3>
+            <figcaption class="figure-caption">
+              Shopping app that connects millions of customers with your store.
+              Customers can buy products and services available at your store
+              online using this app.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="col-sm-4 d-flex">
+          <figure class="figure delivery-app">
+            <img
+              src="img/delivery_app.jpg"
+              class="figure-img img-fluid rounded-circle services-img"
+              alt="Card image cap"
+            />
+            <h3>Delivery App</h3>
+            <figcaption class="figure-caption">
+              App for store owners that allows easy tracking of active orders
+              doorstep delivery.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="col-sm-4 d-flex">
+          <figure class="figure dashboard-app">
+            <img
+              src="img/dashboard.jpg"
+              class="figure-img img-fluid rounded-circle services-img"
+              alt="Card image cap"
+            />
+            <h3>Vendor Dashboard</h3>
+            <figcaption class="figure-caption">
+              App for store owners for managing availability of products and
+              promotions. We provide many other features like expense manager,
+              employee salary manager, gst calculator and much more.
+            </figcaption>
+          </figure>
+        </section>
+      </article>
+    </section>
+
+    <section class="full-height about-us" id="aboutus">
+      <h3 class="section-title my-5">About Us</h3>
+
+      <p class="text-center mx-auto col-md-6 mx-auto col-sm-12">
+        We as a team provide a platform and unique digital identity to our local
+        vendors in this digitalization world. Every Vendor can get their digital
+        shop in our platform by listing all their products and start selling
+        their products to more number of customer Expose your products to every
+        customer and increase sales. <br />
+        Provide integrated platform for local shop to online shop in our
+        KiranaApp with a seperate website and individual vendor accounts. We
+        provide many usefull feature for a shopkeeper like khata book , expense
+        manager, inventory management, and gst management etc in our vendor
+        dashboard It is very easy for a vendor to change the price , description
+        and other details of a product. <br />
+        Our vision is to make virtual dynamic local supermarket for the customer
+        so they can choose the shop to their nearby and buy the genuine product
+        by their local shopkeepes <br />
+        Our mission is to connect vendors to more number of customers
+      </p>
+    </section>
+
+    <section class="full-height contact-us" id="contact">
+      <h3 class="section-title my-5">Contact us</h3>
+      <div class="text-center">
+        <h3 class="text-center">Drop us a line</h3>
+        <p class="text-center">We are here for you! How can we help?</p>
+      </div>
+      <article class="mx-auto contact-form">
+        <form id="queryForm" method="POST" action="/send-contact-details/">
+          {% csrf_token %}
+          <div class="form-group">
+            <label>Your Name</label>
+            <input required name="name" type="text" class="form-control" />
+          </div>
+          <div class="for-group">
+            <label>Email address</label>
+            <input name="email" type="email" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Contact</label>
+            <input required name="contact" type="text" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea
+              required
+              name="message"
+              class="form-control"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-register btn-block">
+            Submit
+          </button>
+        </form>
+
+        <div>
+          <p class="or">OR</p>
+          <p class="text-center">Call us @ <strong>+91 8979708046</strong></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- modal starts -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog bg-light">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center w-100" id="exampleModalLabel">
+              Welcome Back
+            </h5>
+            <button
+              type="button"
+              class="close close-modal"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" action="/vendor/vendor-login/">
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="exampleInputEmail1">Shop Id</label>
+                <input
+                  placeholder="Shop ID"
+                  name="user_name"
+                  type="text"
+                  type="text"
+                  class="form-control rounded"
+                  id="exampleInputEmail1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  placeholder="Password"
+                  name="password"
+                  type="password"
+                  class="form-control rounded"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <button type="submit" class="btn btn-register btn-block rounded">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal ends -->
+
+    <footer class="bg-dark p-2 text-white text-center">
+      <p class="mb-1">Copyright ©️ KiranaAppTech - 2020</p>
+      <p>
+        <a href="/privacy-policy" class="mr-1 text-white">Privacy Policy</a>
+        <a class="ml-1 text-white" href="/terms-and-conditions">T&C</a>
+      </p>
+    </footer>
+  </body>
+  <!-- JS, Popper.js, and jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript">
+    $("#queryForm").submit(function (e) {
+      e.preventDefault();
+      var data = $("#queryForm").serialize();
+      $.post("/send-contact-details/", data, function (d) {
+        alert(
+          "You query has been submitted successfully. We will contact you shortly."
+        );
+      });
+    });
+  </script>
+</html>

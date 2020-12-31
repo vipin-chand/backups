@@ -1,0 +1,15 @@
+{
+  "name": "vipin/php-mvc",
+  "authors": [
+    {
+      "name": "Your Name",
+      "email": "vipin9064@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  },
+  "require": {}
+}

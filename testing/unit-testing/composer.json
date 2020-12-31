@@ -1,0 +1,17 @@
+{
+  "name": "vipin/unit-testing",
+  "authors": [
+    {
+      "name": "Your Name",
+      "email": "vipin9064@gmail.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "^9.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    }
+  }
+}

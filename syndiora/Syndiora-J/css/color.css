@@ -1,0 +1,65 @@
+/*Main Color*/
+/*//*/
+a:hover,
+a:focus,
+a:active {
+  color: #b5904b;
+}
+.color {
+  color: #b5904b;
+}
+.bg-color {
+  background-color: #b5904b;
+}
+.desc.color {
+  color: #b5904b;
+}
+.main-nav > ul > li > a:hover {
+  color: #b5904b;
+}
+.dropdown-list li a:hover {
+  background: #b5904b;
+}
+.product-title a:hover {
+  color: #b5904b;
+}
+.popup-icon {
+  color: #b5904b;
+}
+body .scroll-top {
+  border-color: #b5904b;
+}
+body .scroll-top:hover {
+  background-color: #b5904b;
+}
+.preload #loading {
+  background-color: #b5904b;
+}
+.main-nav > ul > li:hover > a {
+  color: #b5904b;
+}
+.block-product7 .title-list-tab.style-white > li.active > a {
+  border-color: #b5904b;
+  color: #b5904b;
+}
+.item-brand7:hover {
+  border-color: #b5904b;
+}
+.title-underline::after {
+  background-color: #b5904b;
+}
+.adv-slider7 .prev,
+.adv-slider7 .next,
+.adv-slider7 {
+  border-color: #b5904b;
+}
+@media (max-width: 767px) {
+  .main-nav > ul li:hover > a {
+    color: #b5904b !important;
+  }
+  .main-nav .toggle-mobile-menu span,
+  .main-nav .toggle-mobile-menu::before,
+  .main-nav .toggle-mobile-menu::after {
+    background: #b5904b;
+  }
+}
